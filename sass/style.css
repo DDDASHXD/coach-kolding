@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 #hero {
   background-image: url("../img/scott-webb-oRWRlTgBrPo-unsplash.jpg");
   background-size: cover;
@@ -103,5 +105,82 @@ nav ul li.navlink:hover.current::after {
 
 nav ul li.booking {
   margin-left: 30px;
+}
+
+.contactForm {
+  padding-top: 20px;
+}
+
+.contactForm .input {
+  position: relative;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.contactForm .input .label {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+  color: gray;
+}
+
+.contactForm .input.area .label {
+  top: 20px;
+}
+
+.contactForm .coll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.contactForm .coll.name {
+  margin-bottom: 30px;
+}
+
+.contactForm .coll input, .contactForm .coll textarea {
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  -webkit-box-shadow: inset -1px 7px 14px -7px rgba(0, 0, 0, 0.34);
+  box-shadow: inset -1px 7px 14px -7px rgba(0, 0, 0, 0.34);
+}
+
+.contactForm .coll input#firstname, .contactForm .coll input#email, .contactForm .coll textarea#firstname, .contactForm .coll textarea#email {
+  margin-right: 20px;
+}
+
+.contactForm .coll input::after, .contactForm .coll textarea::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contactForm .coll input:not(:placeholder-shown) + .label, .contactForm .coll input:focus + .label, .contactForm .coll textarea:not(:placeholder-shown) + .label, .contactForm .coll textarea:focus + .label {
+  -webkit-transform: translateY(-25px) translateX(-15px);
+          transform: translateY(-25px) translateX(-15px);
+  top: 0;
+  color: black;
+}
+
+.contactForm .coll textarea {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
