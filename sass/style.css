@@ -25,4 +25,83 @@
 #hero .container {
   z-index: 3;
 }
+
+nav {
+  background: transparent;
+  -webkit-transition: background 0.25s ease;
+  transition: background 0.25s ease;
+}
+
+nav.scrolled {
+  background: white;
+}
+
+nav ul {
+  gap: 20px;
+}
+
+nav ul:hover .navlink.current a {
+  color: #919191;
+}
+
+nav ul:hover .navlink.current::after {
+  right: 20px;
+  width: 0%;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #919191;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+  padding: 0px;
+}
+
+nav ul li.navlink::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: #6A915F;
+  -webkit-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+}
+
+nav ul li.navlink.current a {
+  color: #6A915F;
+}
+
+nav ul li.navlink.current::after {
+  left: 0;
+  width: 100%;
+}
+
+nav ul li.navlink:hover a {
+  color: #6A915F;
+}
+
+nav ul li.navlink:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+nav ul li.navlink:hover.current a {
+  color: #6A915F;
+}
+
+nav ul li.navlink:hover.current::after {
+  left: 0;
+  width: 100%;
+}
+
+nav ul li.booking {
+  margin-left: 30px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-
+@import './variables.scss';
 
 #hero{
     background-image: url("../img/scott-webb-oRWRlTgBrPo-unsplash.jpg");
@@ -29,7 +29,88 @@
     }
 }
 
-// @media (min-width: 992px) {
-//     #hero {
-//       margin-top: -58.59px;
-//     }}
+nav {
+    background: transparent;
+    transition: background 0.25s ease;
+
+    &.scrolled {
+        background: white;
+    }
+    ul {
+        gap: 20px;
+        &:hover {
+            .navlink.current {
+                a {
+                    color: $navLink;
+                }
+                &::after {
+                    right: 20px;
+                    width: 0%;
+                }
+            }
+        }
+        
+        li {
+            position: relative;
+            
+
+            a {
+                color: $navLink;
+                font-size: 16px;
+                font-weight: 700;
+                transition: color 0.25s ease;
+                padding: 0px;
+            }
+
+            &.navlink {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: calc(100% + 3px);
+                    right: 0;
+                    width: 0;
+                    height: 2px;
+                    background: $main;
+                    transition: width 0.25s ease;
+                }
+
+                &.current {
+                    a {
+                        color: $main;
+                    }
+
+                    &::after {
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        color: $main;
+                    }
+
+                    &::after {
+                        left: 0;
+                        width: 100%;
+                    }
+
+                    &.current {
+                        a {
+                            color: $main;
+                        }
+
+                        &::after {
+                            left: 0;
+                            width: 100%;
+                        }
+                    }
+                } 
+            }
+
+            &.booking {
+                margin-left: 30px;
+            }
+        }
+    }
+}
