@@ -197,5 +197,22 @@ nav {
     }
 }
 
+.contactrow {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
 
+    .contacticon {
+        height: 15px;
+        filter: brightness(0);
+        margin-right: 10px;
 
+        &.mail {
+            height: 17px;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+}
