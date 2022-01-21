@@ -19,15 +19,15 @@
   
         <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand col-4 mx-5" href="#">
+          <a class="navbar-brand col-4 px-5" href="#">
             <img src="" alt="" class="img-fluid">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> 
           
-          <div class="collapse navbar-collapse col" id="navbarNavAltMarkup">
-            <ul class="navbar-nav justify-content-end">
+          <div class="collapse navbar-collapse bg-secondary col-8" id="navbarNavAltMarkup">
+            <ul class="navbar-nav d-flex align-self-bootom">
               <li class="navlink hero current">
                 <a class="nav-link fw-bold p-0" href="#hero">Hjem</a>
               </li>
@@ -41,9 +41,10 @@
                 <a class="nav-link fw-bold p-0" href="#kontakt">Kontakt</a>
               </li>
             </ul>
+              <button class="d-flex ms-5 btn btn-success shadow py-2 px-4 ">Bestil Tid</button>
           </div>
           
-          <button class="text-light btn btn-success shadow py-2 px-4 me-5">Bestil Tid</button>
+          
           
         </div>
       </nav>
@@ -52,11 +53,11 @@
         <main id="main">
           
           <section id="hero">
-            <div class="conatiner text-center p-5">
-                <!-- <div class="mask" style="background-color: rgba(255, 255, 255, 0.527);"> -->
+
+            <div class="conatiner text-center ">
             
-                <div class="row justify-content-center m-5 py-5">
-                  <div class="col-6 m-5 py-5">
+                <div class="row justify-content-center">
+                  <div class="col-7 m-auto">
                     <h1>Liv og Karriere <br> <span class="text-success">Coaching</span> </h1>
                     <p class="text-muted">Personlig udvikling. 
                       I rolige omgivelser vil jeg guide dig på vej i den retning du ønsker. 
@@ -64,6 +65,7 @@
                       Jeg kan være din guide på rejsen til dit…
                       Skal jeg være din guide på rejsen til dine livsmål? Ønsker du personlig udvikling? Vil du finde balancen i livet? Vil du nå dine mål.</p>
                       <br>
+                      <!-- læs mere på lille skærm -->
                     <a href="" class="text-decoration-none text-muted"></a>
                  
                 </div>
@@ -83,16 +85,52 @@
           
           <section id="omkring" class="text-center container-fluid bg-secondary p-5">
            <div class="row">
+
              <div class="col-4">
-               <img src="img/lene_image.jpg" alt="" class="img-fluid rounded" loading="lazy">
-             </div>
+                <div class="hovereffect">
+                    <img class="img-fluid w-100 p-0" src="img/lene_image.jpg" alt="">
+                    <div class="overlay p-1">
+                      <div class="row">
+                        <div class="col-6"></div>
+                        <h5 class="text-light text-center">Min faglige baggrund:</h5>
+                       <p class="text-light"> 
+                        Socialrådgiver <br>
+                        NLP Coach Practitioner <br>
+                        NLP Master Coach Practitioner <br>
+                        Mediation <br>
+                        NADA-akupunktør <br>
+                        Gestaltterapiweew <br>
+                        Metakognitiv terapi <br>
+                        Åben dialog <br>
+                        Feedback Informed Treatment (FIT) <br>
+                        Certified TRU Practitioner <br>
+                        Empowement <br>
+                        Værdiskabelse</p>
+                      </div>
+                       
+                    </div>
+                </div>
+              </div>
              
-             <div class="col-4 py-5 my-5">
+             <div class="col-4 py-5">
                <p class="fs-4 m-0 fw-light">Omkring</p>
                <h1 class="mx-0">Coach Kolding</h1>
                <hr class="w-25 my-3 bg-success mx-auto">
                <p class="text-muted">Jeg har 30 års erfaring med at guide, støtte enkeltpersoner og grupper med personlig/faglig udvikling. Det vil jeg gerne give dig chancen for at opnå din udvikling, derfor tilbyder jeg coaching. 
-                 <br>
+                 <h5>Min faglige baggrund:</h5>
+                 <p>
+                  Socialrådgiver <br>
+                  NLP Coach Practitioner <br>
+                  NLP Master Coach Practitioner <br>
+                  Mediation <br>
+                  NADA-akupunktør <br>
+                  Gestaltterapiweew <br>
+                  Metakognitiv terapi <br>
+                  Åben dialog <br>
+                  Feedback Informed Treatment (FIT) <br>
+                  Certified TRU Practitioner <br>
+                  Empowement <br>
+                  Værdiskabelse</p>
                 
                </p>
              </div>
@@ -111,8 +149,12 @@
              
            </div>
           </section>
-          
-          <section class="container p-5 m-5" id="behandlinger">
+
+
+
+
+          <!-- BEHANDLINGER  -->
+          <section class="container p-5" id="behandlinger">
 
             <div class="row p-5">
               <div class="col-6 p-4">
@@ -122,11 +164,11 @@
                 <a href="" class="text-muted text-decoration-none">Bestil tid -></a>
               </div>
               <div class="col-6">
-                <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded">
+                <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid">
               </div>
-            </div>
+          
 
-            <div class="row p-5">
+           
               <div class="col-6">
                 <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded">
               </div>
@@ -137,9 +179,9 @@
                 <a href="" class="text-muted text-decoration-none">Bestil tid -></a>
               </div>
               
-            </div>
+       
 
-            <div class="row p-3">
+  
               <div class="col-6 p-4">
                 <p class="text-success">45 min</p>
                 <h2>NADA i gruppe (ved min 4 personer)</h2>
@@ -149,21 +191,21 @@
               <div class="col-6">
                 <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded">
               </div>
-            </div>
+      
 
-            <div class="row p-4">
+       
+              <div class="col-6">
+                <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded">
+              </div>
               <div class="col-6 p-4">
                 <p class="text-success">120 min</p>
                 <h2>Parsamtaler</h2>
                 <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, alias saepe asperiores blanditiis, provident porro dolorum assumenda consectetur illo culpa atque magnam? Deleniti quo pariatur dolor cupiditate maxime vitae nemo?</p>
                 <a href="" class="text-muted text-decoration-none">Bestil tid -></a>
               </div>
-              <div class="col-6">
-                <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded">
-              </div>
-            </div>
-            q
-            <div class="row p-5">
+         
+            
+          
               <div class="col-6 p-4">
                 <p class="text-success">120 min</p>
                 <h2>Netværkssamtaler</h2>
@@ -175,11 +217,13 @@
               </div>
             </div>
 
-
-
           </section>
+          <!-- ...  -->
           
           
+
+
+
           
           <section class="container-fluid bg-secondary p-3" id="kontakt">
             <div class="row">
@@ -275,14 +319,14 @@
               
             </section>
 
-            <section class="link-section container">
+            <!-- <section class="link-section container">
 
-            </section>
+            </section> -->
               
          </main>     
               
               
-            <footer class="container-fluid p-0">
+            <footer class="container-fluid">
 
               <div class="row bg-secondary">
 
