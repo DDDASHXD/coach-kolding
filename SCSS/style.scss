@@ -9,6 +9,17 @@
     }
 }
 
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(60px);
+	}
+}
+
+
+
 .cta {
     background: none;
     color: $cta;
@@ -181,6 +192,19 @@ nav {
         width: 55rem;
         margin: auto;
         margin-bottom: 20px;
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        svg {
+            height: 40px;
+            #wheel {
+                animation: scroll ease 2s infinite;
+            }
+        }
     }
 }
 
