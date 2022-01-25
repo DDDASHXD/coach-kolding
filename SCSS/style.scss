@@ -1,5 +1,39 @@
 @import './variables.scss';
 
+* {
+    font-family: $openSans;
+}
+
+.cta {
+    background: none;
+    color: $cta;
+    border: none;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.25s ease;
+    cursor: pointer;
+    padding: 0 5px;
+    
+    img {
+        height: 0.8rem;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: all 0.25s ease;
+        filter: $svgCta;
+    }
+
+    &:hover {
+        color: $main;
+
+        img {
+            transform: translate(50%, -50%);
+            filter: $svgMain;
+        }
+    }
+}
 
 // NAVIGATION
 nav {
@@ -123,7 +157,12 @@ nav {
 
     h1{
         font-size: 6vw;
+        font-family: $ptSerif;
+        font-weight: 700;
 
+        .nonBold {
+            font-weight: 400;
+        }
     }
 }
 
@@ -137,6 +176,24 @@ nav {
 //     -webkit-box-shadow: inset -1px 7px 14px -7px rgba(0,0,0,0.34); 
 //     box-shadow: inset -1px 7px 14px -7px rgba(0,0,0,0.34);
 // }
+
+#omkring {
+    .subheading,.heading {
+        font-family: $ptSerif;
+
+        &.heading {
+            font-weight: 700;
+        }
+    }
+}
+
+#behandlinger {
+    h2 {
+        font-family: $ptSerif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+}
 
 
 // KONTAKT
