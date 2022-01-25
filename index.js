@@ -19,8 +19,10 @@ window.onscroll = () => {
 
   if (currentScrollPos > 100) {
     document.getElementById('navbar').classList.add('scrolled');
+    document.getElementById('scrollIcon').classList.add('hidden');
   } else if (currentScrollPos < 100) {
     document.getElementById('navbar').classList.remove('scrolled')
+    document.getElementById('scrollIcon').classList.remove('hidden');
   }
   prevScrollpos = currentScrollPos;
 };

@@ -199,11 +199,18 @@ nav {
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        opacity: 1;
+        transition: all 0.25s ease;
+
         svg {
             height: 40px;
             #wheel {
                 animation: scroll ease 2s infinite;
             }
+        }
+
+        &.hidden {
+            opacity: 0;
         }
     }
 }
