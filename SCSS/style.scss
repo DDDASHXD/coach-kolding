@@ -2,6 +2,11 @@
 
 * {
     font-family: $openSans;
+
+    &::selection {
+        color: white;
+        background: $main;
+    }
 }
 
 .cta {
@@ -149,20 +154,33 @@ nav {
         opacity: 0.8;
     }
     
-    .container {
+    .conatiner-xxl {
         z-index: 3;
-
-        
+        margin-top: -50px;
     }
 
     h1{
         font-size: 6vw;
         font-family: $ptSerif;
         font-weight: 700;
+        line-height: 7rem;
+        margin-bottom: 40px;
 
         .nonBold {
             font-weight: 400;
         }
+
+        .text-primary {
+            font-family: ptSerif;
+        }
+    }
+
+    .text-muted {
+        color: $muted;
+        font-weight: 700;
+        width: 55rem;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -287,7 +305,13 @@ nav {
         }
     }
 
-    p {
-        margin: 0;
+    a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.15s ease;
+
+        &:hover {
+            color: $main;
+        }
     }
 }
