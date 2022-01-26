@@ -10,9 +10,9 @@ export class Info extends React.Component {
 
                 <div className="form">
                     <Input id="input-name" label="Fornavn" />
-                    <Input id="input-name" label="Efternavn" />
-                    <Input id="input-name" label="Email" />
-                    <Input id="input-name" label="Telefon nummer" />
+                    <Input id="input-sur" label="Efternavn" />
+                    <Input id="input-email" label="Email" />
+                    <Input id="input-phone" label="Telefon nummer" />
                 </div>
             </>
         );

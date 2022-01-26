@@ -11,6 +11,8 @@
         font-size: 1rem;
         border-radius: 6px;
         color: $inputText;
+        border: 2px solid transparent;
+        transition: border-color 0.25s ease;
 
         &:not(:placeholder-shown),
         &:focus {
@@ -21,6 +23,14 @@
                 font-size: 0.9rem;
                 color: black;
             }
+        }
+
+        &.error {
+            border-color: $error;
+        }
+
+        &.correct {
+            border-color: $main;
         }
     }
 
