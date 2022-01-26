@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// Variables
+$main: #6a915f;
+$mainHover: #79a56d;
+$navLink: #919191;
+$cta: #525252;
+$muted: #747474;
+
+$inputBg: #ebebeb;
+$inputText: #1f1f1f;
+
+// SVG Colors
+$svgCta: invert(27%) sepia(29%) saturate(15%) hue-rotate(96deg) brightness(98%)
+    contrast(82%);
+$svgMain: invert(51%) sepia(21%) saturate(599%) hue-rotate(61deg)
+    brightness(98%) contrast(93%);
+
+// fonts
+$openSans: "Open Sans", sans-serif;
+$ptSerif: "ptSerif", serif;
+
+// Styles
+$borderRadius: 10px;

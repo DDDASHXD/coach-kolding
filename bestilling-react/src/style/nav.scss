@@ -1,0 +1,31 @@
+@import "./variables.scss";
+
+.nav {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    img {
+      width: 10rem;
+    }
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}

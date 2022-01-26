@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.input {
+    border: none;
+    position: relative;
+
+    input {
+        background: $inputBg;
+        border: none;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 6px;
+        color: $inputText;
+
+        &:not(:placeholder-shown),
+        &:focus {
+            outline: none;
+
+            & + .label {
+                transform: translate(0px, -230%);
+                font-size: 0.9rem;
+                color: black;
+            }
+        }
+    }
+
+    .label {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translate(10px, -50%);
+        color: $inputText;
+        transition: all 0.15s;
+        pointer-events: none;
+    }
+}
