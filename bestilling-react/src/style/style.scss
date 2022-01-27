@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $openSans;
+
+    &::selection {
+        color: white;
+        background: $main;
+    }
 }
 
 body {

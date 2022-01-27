@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+.datepicker {
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .days {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+
+            .day {
+                display: grid;
+                place-items: center;
+                height: 25px;
+                width: 25px;
+                border-radius: 2px;
+                transition: all 0.15s ease;
+
+                cursor: pointer;
+
+                &.today {
+                    background: $main;
+                    color: white;
+                    cursor: default;
+                }
+
+                &:hover {
+                    background: $secondary;
+
+                    &.today {
+                        background: $main;
+                    }
+                }
+            }
+        }
+    }
+}
