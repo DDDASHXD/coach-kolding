@@ -20,6 +20,8 @@ const Months = [
     "December",
 ];
 
+export let todayPresent = true;
+
 let currentMonthNr = d.getMonth();
 let currentMonth = Months[currentMonthNr];
 let currentYear = d.getFullYear();
@@ -44,11 +46,20 @@ const reloadDates = () => {
 
 reloadDates();
 
+export const setTrue = () => {
+    todayPresent = true;
+};
+
 export class Datepicker extends React.Component {
     next() {
         currentMonthNr++;
         currentMonth = Months[currentMonthNr];
-        document.getElementsByClassName("");
+        if (todayPresent) {
+            document
+                .getElementsByClassName("today")[0]
+                .classList.remove("today");
+            todayPresent = false;
+        }
 
         for (let i = 0; i < days.length; i++) {
             days[i] = 0;
@@ -60,6 +71,12 @@ export class Datepicker extends React.Component {
     prev() {
         currentMonthNr--;
         currentMonth = Months[currentMonthNr];
+        if (todayPresent) {
+            document
+                .getElementsByClassName("today")[0]
+                .classList.remove("today");
+            todayPresent = false;
+        }
 
         for (let i = 0; i < days.length; i++) {
             days[i] = 0;
@@ -80,32 +97,30 @@ export class Datepicker extends React.Component {
         this.setState({});
     }
     render() {
-        let hidden = "";
         const dates = days.map((x) => (
             <Day day={x.day} id={"day-" + x.id} today={x.today} />
         ));
+        let hidden = "";
         if (currentMonthNr == minMonth) {
             hidden = "hidden";
-            document.getElementById("prev").classList.add("hidden");
         }
         return (
             <div className="datepicker">
                 <div className="heading">
-                    <h2>{currentMonth + " " + currentYear}</h2>
                     <button
-                        className="monthpicker"
+                        className={"monthpicker " + hidden}
                         id="prev"
                         onClick={() => this.prev()}
-                        className={hidden}
                     >
-                        {"<"}
+                        <img src="./assets/icons/arrow.svg" alt="" />
                     </button>
+                    <h2>{currentMonth + " " + currentYear}</h2>
                     <button
                         className="monthpicker"
                         id="next"
                         onClick={() => this.next()}
                     >
-                        {">"}
+                        <img src="./assets/icons/arrow.svg" alt="" />
                     </button>
                     <button className="to-today" onClick={() => this.today()}>
                         Today

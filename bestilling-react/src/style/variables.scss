@@ -4,20 +4,24 @@
 $main: #6a915f;
 $mainHover: #79a56d;
 $navLink: #919191;
-$cta: #525252;
+$cta: #ac8585;
 $muted: #747474;
 
 $error: #a85353;
 
 $secondary: #ebebeb;
 $secondary2: #aaaaaa;
+$secondary3: #cacaca;
 $inputText: #1f1f1f;
+$inputTextHover: #383838;
 
 // SVG Colors
 $svgCta: invert(27%) sepia(29%) saturate(15%) hue-rotate(96deg) brightness(98%)
     contrast(82%);
 $svgMain: invert(51%) sepia(21%) saturate(599%) hue-rotate(61deg)
     brightness(98%) contrast(93%);
+$svgDisabled: invert(50%) sepia(5%) saturate(0%) hue-rotate(345deg)
+    brightness(99%) contrast(94%);
 
 // fonts
 $openSans: "Open Sans", sans-serif;
@@ -25,3 +29,5 @@ $ptSerif: "ptSerif", serif;
 
 // Styles
 $borderRadius: 10px;
+
+$test: #808080;

@@ -1,4 +1,5 @@
 import React from "react";
+import { setTrue, todayPresent } from "./datepicker";
 
 export class Day extends React.Component {
     changeDate(id) {
@@ -6,8 +7,11 @@ export class Day extends React.Component {
         let clickedId = document.getElementById(id);
 
         if (!clickedId.classList.contains("today")) {
-            today.classList.remove("today");
+            if (todayPresent) {
+                today.classList.remove("today");
+            }
             clickedId.classList.add("today");
+            setTrue();
         }
     }
     render() {

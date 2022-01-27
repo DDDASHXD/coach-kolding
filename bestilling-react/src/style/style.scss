@@ -41,3 +41,22 @@ h2 {
         }
     }
 }
+
+button.book {
+    position: fixed;
+    background: $inputText;
+    color: white;
+    border-radius: $borderRadius;
+    border: none;
+    padding: 10px 50px;
+    font-size: 1.1rem;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: background 0.25s ease;
+
+    &:hover {
+        background: $inputTextHover;
+    }
+}

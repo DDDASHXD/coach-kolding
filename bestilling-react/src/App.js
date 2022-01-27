@@ -4,22 +4,23 @@ import { Time } from "./components/time";
 import { Info } from "./components/info";
 
 function App() {
-  return (
-    <div className="App">
-      <Nav />
-      <div className="container">
-        <div className="col" id="treatment">
-          <Treatment />
+    return (
+        <div className="App">
+            <button className="book">Book tid</button>
+            <Nav />
+            <div className="container">
+                <div className="col" id="treatment">
+                    <Treatment />
+                </div>
+                <div className="col" id="time">
+                    <Time />
+                </div>
+                <div className="col" id="info">
+                    <Info />
+                </div>
+            </div>
         </div>
-        <div className="col" id="time">
-          <Time />
-        </div>
-        <div className="col" id="info">
-          <Info />
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default App;
