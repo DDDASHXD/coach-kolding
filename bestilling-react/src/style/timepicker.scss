@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.timepicker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    select {
+        width: 100%;
+        border-radius: 6px;
+        border: none;
+        background: $secondary;
+        padding: 10px;
+    }
+
+    .divider {
+        width: 25px;
+    }
+}
