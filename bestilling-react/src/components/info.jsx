@@ -13,6 +13,7 @@ export class Info extends React.Component {
                     <Input id="input-sur" label="Efternavn" />
                     <Input id="input-email" label="Email" />
                     <Input id="input-phone" label="Telefon nummer" />
+                    <Input id="input-msg" textarea={true} label="Besked" />
                 </div>
             </>
         );

@@ -4,7 +4,8 @@
     border: none;
     position: relative;
 
-    input {
+    input,
+    textarea {
         background: $inputBg;
         border: none;
         padding: 10px;
@@ -13,6 +14,17 @@
         color: $inputText;
         border: 2px solid transparent;
         transition: border-color 0.25s ease;
+        width: 20rem;
+
+        &.textarea {
+            resize: none;
+            height: 10rem;
+            & + .label {
+                top: 0;
+                left: 0;
+                transform: translate(10px, 10px);
+            }
+        }
 
         &:not(:placeholder-shown),
         &:focus {
@@ -22,6 +34,12 @@
                 transform: translate(0px, -230%);
                 font-size: 0.9rem;
                 color: black;
+            }
+
+            &.textarea {
+                & + .label {
+                    transform: translate(0px, -100%);
+                }
             }
         }
 

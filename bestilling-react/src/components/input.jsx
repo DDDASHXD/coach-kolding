@@ -54,14 +54,30 @@ export class Input extends React.Component {
         }
     }
     render() {
-        return (
-            <div className={"input "}>
+        let input;
+        if (this.props.textarea) {
+            input = (
+                <textarea
+                    type="text"
+                    id={this.props.id}
+                    placeholder=" "
+                    onKeyUp={() => this.checkError(this.props.id)}
+                    className="textarea"
+                />
+            );
+        } else {
+            input = (
                 <input
                     type="text"
                     id={this.props.id}
                     placeholder=" "
                     onKeyUp={() => this.checkError(this.props.id)}
                 />
+            );
+        }
+        return (
+            <div className={"input "}>
+                {input}
                 <p className="label">{this.props.label}</p>
             </div>
         );
