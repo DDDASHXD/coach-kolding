@@ -58,9 +58,15 @@ button.book {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-    transition: background 0.25s ease;
+    transition: all 0.25s ease;
+    z-index: 200;
 
     &:hover {
         background: $inputTextHover;
+    }
+
+    &.back {
+        bottom: 50%;
+        transform: translate(-50%, 100px);
     }
 }

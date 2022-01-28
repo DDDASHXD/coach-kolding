@@ -9,6 +9,8 @@ export const showDone = () => {
         info.selectedTreatment;
 
     document.getElementsByClassName("done")[0].classList.add("shown");
+    document.getElementsByClassName("book")[0].innerHTML = "Tilbage";
+    document.getElementsByClassName("book")[0].classList.add("back");
 };
 
 export class Done extends React.Component {

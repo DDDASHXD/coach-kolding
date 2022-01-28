@@ -8,6 +8,8 @@ import { Notification, showNotification } from "./components/notification";
 import { Months, currentMonthNr } from "./components/datepicker";
 import { Done, showDone } from "./components/done";
 
+let done = false;
+
 let emailjsApi = {
     userId: "user_DusWKWompI2cyBwFSo9Fb",
     serviceId: "service_fjipfvd",
@@ -26,87 +28,97 @@ export class App extends React.Component {
         let daySelected = false;
         let selectedDay;
         let selectedTreatment;
+
         document.getElementById("done-month").innerHTML =
             Months[currentMonthNr];
 
-        for (let i = 0; i < inputs.length; i++) {
-            if (!inputs[i].classList.contains("correct")) {
-                inputs[i].classList.add("error");
-                inputsCorrect = false;
-                console.log("correct");
-            }
-        }
-
-        for (let i = 0; i < days.length; i++) {
-            if (days[i].classList.contains("today")) {
-                daySelected = true;
-                selectedDay = days[i].textContent;
-                document.getElementById("done-day").innerHTML = selectedDay;
-            } else {
-                infoAccepted = false;
-            }
-        }
-
-        if (daySelected && inputsCorrect) {
-            infoAccepted = true;
-        }
-
-        for (let i = 0; i < treatments.length; i++) {
-            if (treatments[i].classList.contains("card-active")) {
-                let treatmentActive = treatments[i].id;
-
-                switch (treatmentActive) {
-                    case "card-0":
-                        selectedTreatment = "Coachende samtale";
-                        break;
-                    case "card-1":
-                        selectedTreatment = "Coachende samtale + NADA";
-                        break;
-                    case "card-2":
-                        selectedTreatment = "NADA i gruppe";
-                        break;
-                    case "card-3":
-                        selectedTreatment = "Parsamtale";
-                        break;
-                    case "card-4":
-                        selectedTreatment = "Netværkssamtale";
-                        break;
+        if (!done) {
+            for (let i = 0; i < inputs.length; i++) {
+                if (!inputs[i].classList.contains("correct")) {
+                    inputs[i].classList.add("error");
+                    inputsCorrect = false;
+                    console.log("correct");
                 }
-                info = { selectedTreatment: selectedTreatment };
             }
-        }
 
-        if (!infoAccepted) {
-            showNotification(
-                "danger",
-                "Noget af den information du har gevet, er ikke korrekt. Prøv igen."
-            );
-        } else {
-            showNotification("success", "Sender bestilling...");
-            emailjs.init("user_DusWKWompI2cyBwFSo9Fb");
-            var templateParams = {
-                fornavn: document.getElementById("input-name").value,
-                efternavn: document.getElementById("input-sur").value,
-                email: document.getElementById("input-email").value,
-                phone: document.getElementById("input-phone").value,
-                msg: document.getElementById("input-msg").value,
-                day: selectedDay,
-                month: Months[currentMonthNr],
-                hour: document.getElementById("hour").value,
-                minute: document.getElementById("minute").value,
-                treatment: selectedTreatment,
-            };
-            emailjs
-                .send("service_fjipfvd", "template_enmwmam", templateParams)
-                .then(
-                    function (response) {
-                        console.log("SUCCESS!", response.status, response.text);
-                        showDone();
-                    },
-                    function (error) {
-                        console.log("FAILED...", error);
+            for (let i = 0; i < days.length; i++) {
+                if (days[i].classList.contains("today")) {
+                    daySelected = true;
+                    selectedDay = days[i].textContent;
+                    document.getElementById("done-day").innerHTML = selectedDay;
+                } else {
+                    infoAccepted = false;
+                }
+            }
+
+            if (daySelected && inputsCorrect) {
+                infoAccepted = true;
+            }
+
+            for (let i = 0; i < treatments.length; i++) {
+                if (treatments[i].classList.contains("card-active")) {
+                    let treatmentActive = treatments[i].id;
+
+                    switch (treatmentActive) {
+                        case "card-0":
+                            selectedTreatment = "Coachende samtale";
+                            break;
+                        case "card-1":
+                            selectedTreatment = "Coachende samtale + NADA";
+                            break;
+                        case "card-2":
+                            selectedTreatment = "NADA i gruppe";
+                            break;
+                        case "card-3":
+                            selectedTreatment = "Parsamtale";
+                            break;
+                        case "card-4":
+                            selectedTreatment = "Netværkssamtale";
+                            break;
                     }
+                    info = { selectedTreatment: selectedTreatment };
+                }
+            }
+
+            if (!infoAccepted) {
+                showNotification(
+                    "danger",
+                    "Noget af den information du har gevet, er ikke korrekt. Prøv igen."
                 );
+            } else {
+                done = true;
+                showNotification("success", "Sender bestilling...");
+                emailjs.init("user_DusWKWompI2cyBwFSo9Fb");
+                var templateParams = {
+                    fornavn: document.getElementById("input-name").value,
+                    efternavn: document.getElementById("input-sur").value,
+                    email: document.getElementById("input-email").value,
+                    phone: document.getElementById("input-phone").value,
+                    msg: document.getElementById("input-msg").value,
+                    day: selectedDay,
+                    month: Months[currentMonthNr],
+                    hour: document.getElementById("hour").value,
+                    minute: document.getElementById("minute").value,
+                    treatment: selectedTreatment,
+                };
+                emailjs
+                    .send("service_fjipfvd", "template_enmwmam", templateParams)
+                    .then(
+                        function (response) {
+                            console.log(
+                                "SUCCESS!",
+                                response.status,
+                                response.text
+                            );
+                            showDone();
+                        },
+                        function (error) {
+                            console.log("FAILED...", error);
+                        }
+                    );
+            }
+        } else {
+            console.log("Back button clicked!");
         }
     }
     render() {

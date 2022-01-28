@@ -5,10 +5,19 @@ let hoursArr = [];
 let minArr = [];
 
 for (let i = 0; i < 24; i++) {
-    hoursArr[i] = ("0" + i).slice(-2);
+    if (i > 9 && i < 17) {
+        hoursArr[i] = ("0" + i).slice(-2);
+    }
 }
 
-for (let i = 0; i < 60; i++) {
+for (let i = 0; i < 55; i++) {
+    if (i == 0) {
+        i = i;
+    } else if (i > 0 && i < 2) {
+        i = i + 4;
+    } else if (i > 5) {
+        i = i + 4;
+    }
     minArr[i] = ("0" + i).slice(-2);
 }
 
