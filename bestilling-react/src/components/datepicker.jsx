@@ -34,9 +34,9 @@ let getDaysInMonth = (year, month) => {
 
 let days = [];
 
-const reloadDates = () => {
+const reloadDates = (today) => {
     for (let i = 0; i < getDaysInMonth(currentYear, currentMonthNr); i++) {
-        if (i === d.getDate()) {
+        if (i === today) {
             days[i] = { id: i, day: i + 1, today: "today" };
         } else {
             days[i] = { id: i, day: i + 1, today: "" };
@@ -44,7 +44,7 @@ const reloadDates = () => {
     }
 };
 
-reloadDates();
+reloadDates(d.getDate());
 
 export const setTrue = () => {
     todayPresent = true;
@@ -61,12 +61,15 @@ export class Datepicker extends React.Component {
             todayPresent = false;
         }
 
-        for (let i = 0; i < days.length; i++) {
-            days[i] = 0;
-        }
+        days = [];
 
         reloadDates();
         this.setState({});
+        if (days.length < 29) {
+            document.getElementById("date-grid").classList.add("margin");
+        } else {
+            document.getElementById("date-grid").classList.remove("margin");
+        }
     }
     prev() {
         currentMonthNr--;
@@ -78,23 +81,29 @@ export class Datepicker extends React.Component {
             todayPresent = false;
         }
 
-        for (let i = 0; i < days.length; i++) {
-            days[i] = 0;
-        }
+        days = [];
 
         reloadDates();
         this.setState({});
+        if (days.length < 29) {
+            document.getElementById("date-grid").classList.add("margin");
+        } else {
+            document.getElementById("date-grid").classList.remove("margin");
+        }
     }
     today() {
         currentMonthNr = d.getMonth();
         currentMonth = Months[currentMonthNr];
 
-        for (let i = 0; i < days.length; i++) {
-            days[i] = 0;
-        }
+        days = [];
 
         reloadDates();
         this.setState({});
+        if (days.length < 29) {
+            document.getElementById("date-grid").classList.add("margin");
+        } else {
+            document.getElementById("date-grid").classList.remove("margin");
+        }
     }
     render() {
         const dates = days.map((x) => (
@@ -127,7 +136,9 @@ export class Datepicker extends React.Component {
                     </button>
                 </div>
                 <div className="days">
-                    <div className="grid">{dates}</div>
+                    <div className="grid" id="date-grid">
+                        {dates}
+                    </div>
                 </div>
                 <Timepicker />
             </div>

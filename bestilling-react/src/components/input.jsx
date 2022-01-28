@@ -58,6 +58,7 @@ export class Input extends React.Component {
         if (this.props.textarea) {
             input = (
                 <textarea
+                    className="input"
                     type="text"
                     id={this.props.id}
                     placeholder=" "
@@ -68,6 +69,7 @@ export class Input extends React.Component {
         } else {
             input = (
                 <input
+                    className="input"
                     type="text"
                     id={this.props.id}
                     placeholder=" "

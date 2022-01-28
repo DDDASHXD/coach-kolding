@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,0MAAI,CDEZ,AAAA,WAAW,AAAC,CACR,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,CAC9B,WAAW,CAAE,MAAM,CAatB,AAhBD,AAKI,WALO,CAKP,MAAM,AAAC,CACH,KAAK,CAAE,IAAI,CACX,aAAa,CAAE,GAAG,CAClB,MAAM,CAAE,IAAI,CACZ,UAAU,CCAN,OAAO,CDCX,OAAO,CAAE,IAAI,CAChB,AAXL,AAaI,WAbO,CAaP,QAAQ,AAAC,CACL,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "../bestilling-react/src/style/timepicker.scss",
+        "../bestilling-react/src/style/variables.scss"
+    ],
+    "names": [],
+    "file": "timepicker.min.css"
+}

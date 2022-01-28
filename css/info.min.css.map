@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,0MAAI,CDEZ,AAAA,KAAK,AAAC,CACF,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,GAAG,CAAE,IAAI,CACZ",
+    "sources": [
+        "../bestilling-react/src/style/info.scss",
+        "../bestilling-react/src/style/variables.scss"
+    ],
+    "names": [],
+    "file": "info.min.css"
+}

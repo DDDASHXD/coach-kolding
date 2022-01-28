@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9000;
+    border-radius: 10px;
+    padding: 10px 50px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+
+    &.success {
+        background: $main;
+        color: white;
+    }
+
+    &.danger {
+        background: $error;
+        color: white;
+    }
+
+    &.hidden {
+        opacity: 0;
+        top: 0;
+    }
+}
