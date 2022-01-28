@@ -5,7 +5,7 @@ import "../css/datepicker.min.css";
 
 export const d = new Date();
 
-const Months = [
+export const Months = [
     "Januar",
     "Febuar",
     "Marts",
@@ -22,7 +22,7 @@ const Months = [
 
 export let todayPresent = true;
 
-let currentMonthNr = d.getMonth();
+export let currentMonthNr = d.getMonth();
 let currentMonth = Months[currentMonthNr];
 let currentYear = d.getFullYear();
 

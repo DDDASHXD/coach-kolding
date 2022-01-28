@@ -5,7 +5,7 @@ export class Treatment extends React.Component {
     render() {
         return (
             <>
-                <h3>Vælg behandling</h3>
+                <h3 class="treatment">Vælg behandling</h3>
                 <TreatmentPicker />
             </>
         );
