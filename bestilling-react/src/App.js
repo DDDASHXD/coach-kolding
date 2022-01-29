@@ -118,7 +118,7 @@ export class App extends React.Component {
                     );
             }
         } else {
-            console.log("Back button clicked!");
+            document.href = "../";
         }
     }
     render() {

@@ -66,6 +66,7 @@ button.book {
     }
 
     &.back {
+        transition: all 1s ease;
         bottom: 50%;
         transform: translate(-50%, 100px);
     }
