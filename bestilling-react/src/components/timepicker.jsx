@@ -5,7 +5,7 @@ let hoursArr = [];
 let minArr = [];
 
 for (let i = 0; i < 24; i++) {
-    if (i > 9 && i < 17) {
+    if (i > 15 && i < 21) {
         hoursArr[i] = ("0" + i).slice(-2);
     }
 }

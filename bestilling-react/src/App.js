@@ -106,7 +106,7 @@ export class App extends React.Component {
                     minute: document.getElementById("minute").value,
                     treatment: selectedTreatment,
                 };
-                fetch("/api/tasks/add", {
+                /*fetch("/api/tasks/add", {
                     method: "post",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -123,8 +123,8 @@ export class App extends React.Component {
                     }),
                 }).then(() => {
                     console.log("Sent");
-                });
-                /*emailjs
+                });*/
+                emailjs
                     .send("service_fjipfvd", "template_enmwmam", templateParams)
                     .then(
                         function (response) {
@@ -153,7 +153,7 @@ export class App extends React.Component {
                         function (error) {
                             console.log("FAILED...", error);
                         }
-                    );*/
+                    );
             }
         } else {
             document.href = "../";
