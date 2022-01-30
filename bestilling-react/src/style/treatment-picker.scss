@@ -26,17 +26,52 @@
     }
 
     .card {
-        width: 170px;
+        width: 200px;
         height: 250px;
         border: 2px solid black;
         border-radius: $borderRadius;
         background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         transition: all 0.25s ease;
+        text-align: center;
+        position: relative;
+        padding: 5px;
+        cursor: pointer;
 
         &.card-active {
             border-color: $main;
             box-shadow: 0px 0px 29px -11px rgba(0, 0, 0, 0.49);
             transform: scale(1.02);
+        }
+
+        p {
+            &.subheading {
+                font-size: 0.8rem;
+                color: $main;
+            }
+
+            &.heading {
+                font-family: $ptSerif;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            &.desc {
+                font-size: 0.8rem;
+            }
+        }
+
+        .price {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translatex(-50%);
+            background: $main;
+            color: white;
+            padding: 2px 30px;
+            border-radius: 5px;
         }
     }
 }

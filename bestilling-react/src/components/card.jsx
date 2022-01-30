@@ -21,7 +21,10 @@ export class Card extends React.Component {
                 id={this.props.id}
                 onClick={() => this.changeActive(this.props.id)}
             >
-                <h2>{this.props.title}</h2>
+                <p className="subheading">{this.props.time} min</p>
+                <p className="heading">{this.props.title}</p>
+                <p className="desc">{this.props.desc}</p>
+                <div className="price">{this.props.price},-</div>
             </div>
         );
     }

@@ -16,6 +16,10 @@ let emailjsApi = {
     templateId: "template_enmwmam",
 };
 
+function generateId(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
 export let info = {};
 
 export class App extends React.Component {
@@ -90,6 +94,7 @@ export class App extends React.Component {
                 showNotification("success", "Sender bestilling...");
                 emailjs.init("user_DusWKWompI2cyBwFSo9Fb");
                 var templateParams = {
+                    id: generateId(10000, 99999),
                     fornavn: document.getElementById("input-name").value,
                     efternavn: document.getElementById("input-sur").value,
                     email: document.getElementById("input-email").value,
@@ -101,7 +106,25 @@ export class App extends React.Component {
                     minute: document.getElementById("minute").value,
                     treatment: selectedTreatment,
                 };
-                emailjs
+                fetch("/api/tasks/add", {
+                    method: "post",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        name: templateParams.fornavn,
+                        surname: templateParams.efternavn,
+                        email: templateParams.email,
+                        phone: templateParams.phone,
+                        msg: templateParams.msg,
+                        day: templateParams.day,
+                        month: templateParams.month,
+                        hour: templateParams.hour,
+                        minute: templateParams.minute,
+                        treatment: templateParams.treatment,
+                    }),
+                }).then(() => {
+                    console.log("Sent");
+                });
+                /*emailjs
                     .send("service_fjipfvd", "template_enmwmam", templateParams)
                     .then(
                         function (response) {
@@ -116,6 +139,21 @@ export class App extends React.Component {
                             console.log("FAILED...", error);
                         }
                     );
+                emailjs
+                    .send("service_fjipfvd", "template_66nvj19", templateParams)
+                    .then(
+                        function (response) {
+                            console.log(
+                                "SUCCESS!",
+                                response.status,
+                                response.text
+                            );
+                            showDone();
+                        },
+                        function (error) {
+                            console.log("FAILED...", error);
+                        }
+                    );*/
             }
         } else {
             document.href = "../";
