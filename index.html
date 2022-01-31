@@ -5,9 +5,11 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
 | | | / /_\ \\ `--.| |_| | \ V /| | | | | | | |__ | | | |
 | | | |  _  | `--. \  _  | /   \| | | | | | |  __|| | | |
 | |/ /| | | |/\__/ / | | |/ /^\ \ |/ /| |/ /| |___\ \_/ /
-|___/ \_| |_/\____/\_| |_/\/   \/___(_)___/ \____/ \___/ 
+|___/ \_| |_/\____/\_| |_/\/   \/___/_)___/ \____/ \___/ 
 
 © 2021-2022 DASH SOLUTIONS
+noooo just div. dash xd er kun dig
+og den siger fejl. du kan ikke sætte det her først i documentet
 -->
 
 <!DOCTYPE html>
@@ -19,7 +21,10 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
     <title>Coach Kolding</title>
     <link rel="stylesheet" href="css/colors.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
     <!-- <link rel="stylesheet" href="sass/style.css"> -->
   </head>
 
@@ -27,7 +32,7 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
     <div class="container-fluid p-0 overflow-hidden">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
         <div class="container">
-          <a class="navbar-brand col-4 px-5" href="#">
+          <a class="navbar-brand col-4" href="#">
             <img src="" alt=" Coach Kolding - logo" class="img-fluid" />
           </a>
 
@@ -44,10 +49,10 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
           </button>
 
           <div
-            class="bg-md-light p-md-3 collapse navbar-collapse col-8 justify-content-between px-5"
+            class="bg-md-light p-3 p-lg-0 collapse navbar-collapse col-8 justify-content-between px-5"
             id="navbarNavAltMarkup"
           >
-            <ul class="p-md-3 navbar-nav d-flex align-self-bottom">
+            <ul class="p-3 p-lg-0 navbar-nav d-flex align-self-bottom">
               <li class="navlink hero current">
                 <a class="nav-link fw-bold p-0" href="#hero">Hjem</a>
               </li>
@@ -135,51 +140,14 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
         <!-- OMKRING  -->
         <section id="omkring" class="bg-secondary py-5">
           <div class="container-xxl">
-            <div class="row px-5 gx-5">
-              <div class="col-12 col-lg-6">
-                <div class="row">
-                  <!-- PORTRAT BILLEDE  -->
-                  <div class="col-6 col-lg-12 mx-auto">
-                    <img
-                      class="img-fluid p-2 p-md-4 rounded-circle"
-                      src="img/IMG_4529[20] kopi.jpeg"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="col-9 bg-success rounded p-3 shadow-sm mx-auto">
-                    <h5 class="fs-4 p-2 text-center text-primary">
-                      Min faglige baggrund:
-                    </h5>
-                    <div class="row text-dark ps-3">
-                      <ul class="col-6">
-                        <li>Socialrådgiver</li>
-                        <li>NLP Coach Practitioner</li>
-                        <li>NLP Master Coach Practitioner</li>
-                        <li>Mediation</li>
-                        <li>NADA-akupunktør</li>
-                        <li>Gestaltterapiweew</li>
-                      </ul>
-                      <ul class="col-6">
-                        <li>Metakognitiv terapi</li>
-                        <li>Åben dialog</li>
-                        <li>Feedback Informed Treatment (FIT)</li>
-                        <li>Certified TRU Practitioner</li>
-                        <li>Empowement</li>
-                        <li>Værdiskabelse</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6 py-5">
+            <div class="row">
+              <div class="col-12 col-md-6 mx-auto mb-5">
                 <p class="fs-4 m-0 fw-light text-center subheading">Omkring</p>
                 <h1 class="mx-0 text-center heading display-5">
                   Coach Kolding
                 </h1>
-                <hr class="opacity-75 w-25 mx-auto my-2 my-lg-3" />
-                <p class="text-muted text-center fs-5">
+                <hr class="opacity-100 w-25 mx-auto my-2 my-lg-3" />
+                <p class="text-muted text-center fs-6">
                   Personlig udvikling. I rolige omgivelser vil jeg guide dig på
                   vej i den retning du ønsker. Find dit personlige
                   udviklingspotentiale. Nå målene i dit liv. Genfind
@@ -188,21 +156,87 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
                   guide på rejsen til dine livsmål? Ønsker du personlig
                   udvikling? Vil du finde balancen i livet? Vil du nå dine mål.
                 </p>
-                <div class="row">
-                  <!-- <div class="col-12">
-                      <img src="img/pexels-cottonbro-4101143.jpg" alt="" class="rounded-top img-fluid">
-                    </div> -->
-                  <div class="col-12 ">
+
+                <div class="col-12 mx-auto p-4 rounded bg-success d-none">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <img
+                        class="img-fluid w-100 rounded-circle"
+                        src="img/IMG_4529[20] kopi.jpeg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <h5 class="fs-5 text-primary">Min faglige baggrund:</h5>
+                      <div class="row text-dark" style="font-size: 12px">
+                        <ul class="">
+                          <li>Socialrådgiver</li>
+                          <li>NLP Coach Practitioner</li>
+                          <li>NLP Master Coach Practitioner</li>
+                          <li>Mediation</li>
+                          <li>NADA-akupunktør</li>
+                          <li>Gestaltterapiweew</li>
+                          <li>Metakognitiv terapi</li>
+                          <li>Åben dialog</li>
+                          <li>Feedback Informed Treatment (FIT)</li>
+                          <li>Certified TRU Practitioner</li>
+                          <li>Empowement</li>
+                          <li>Værdiskabelse</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 mb-5">
+                <div class="row justify-content-center">
+                  <div class="col-10">
                     <img
                       src="img/1684367 2.jpg"
                       alt=""
-                      class="my-3 img-fluid rounded-top"
+                      class="img-fluid rounded-top w-100"
                     />
+                  </div>
+                  <div class="col-10">
                     <img
                       src="img/271706013_598309321267277_3749669015426699254_n.jpg"
                       alt=""
-                      class="img-fluid rounded-bottom"
+                      class="img-fluid rounded-bottom w-100"
                     />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-8 mx-auto p-4 rounded bg-success">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img
+                      class="img-fluid w-100 rounded-circle"
+                      src="img/IMG_4529[20] kopi.jpeg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <h5 class="fs-4 p-2 text-primary">Min faglige baggrund:</h5>
+                    <div class="ps-4 row text-dark">
+                      <ul class="">
+                        <li>Socialrådgiver</li>
+                        <li>NLP Coach Practitioner</li>
+                        <li>NLP Master Coach Practitioner</li>
+                        <li>Mediation</li>
+                        <li>NADA-akupunktør</li>
+                        <li>Gestaltterapiweew</li>
+                        <li>Metakognitiv terapi</li>
+                        <li>Åben dialog</li>
+                        <li>Feedback Informed Treatment (FIT)</li>
+                        <li>Certified TRU Practitioner</li>
+                        <li>Empowement</li>
+                        <li>Værdiskabelse</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -477,11 +511,6 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  class="d-block w-100"
-                  <img src="..." class="d-block w-100" alt="...">
-                  alt="First slide"
-                />
                 <div class="carousel-caption d-none d-md-block text-dark p-5">
                   <p class="fs-3">
                     "Det har jeg ikke prøvet før. Så det kan jeg sikker godt."
@@ -529,8 +558,9 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
           <div class="col-7">
             <div class="row">
               <div class="col-md-4">
-                <h5>dash sul kontakt informationer</h5>
+                <h5>JustDiv kontakt informationer</h5>
                 <ul>
+                  <li>website: justdiv.dev</li>
                   <li>mail</li>
                   <li>tlf</li>
                 </ul>
@@ -563,10 +593,10 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
 
             <p class="fw-lighter">Julie Thomhav & Sebastion Skov Nielsen</p>
             <p class="text-muted">
-              Hjemmesiden er lavet af et lille selvstartet web firma
-              dashsolutions betånde af 2 personer.
+              Hjemmesiden er lavet af et lille selvstartet web firma JustDiv
+              betånde af 2 personer.
               <br class="d-none d-md-block" />
-              dashsolutions laver hjemmesider og grafisk design til alle slags
+              JustDiv laver hjemmesider og grafisk design til alle slags
               virksomheder.
             </p>
             <div class="social-icons gap-0 justify-content-center row">
@@ -576,8 +606,7 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
               <div class="col-1">
                 <a href=""><i class="text-muted bi bi-instagram"></i></a>
               </div>
-              
-              
+
               <!-- facebook - reklame
                       instagram - photograf billeder, grafisk design
                       youtube - tutorials
@@ -589,7 +618,7 @@ ______  ___   _____ _   _ __   _____________ _____ _   _
 
         <div class="row px-md-5 py-3 bg-dark text-light">
           <div class="col-auto me-auto">@coach kolding</div>
-          <div class="col-auto ms-auto">@dashsolutions</div>
+          <div class="col-auto ms-auto">@JustDiv</div>
         </div>
       </footer>
     </div>
