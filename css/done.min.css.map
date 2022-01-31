@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,0MAAI,CDEZ,AAAA,KAAK,AAAC,CACF,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,GAAG,CACZ,UAAU,CAAE,KAAK,CAEjB,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,CAAC,CACV,cAAc,CAAE,IAAI,CACpB,UAAU,CAAE,kBAAkB,CAMjC,AArBD,AAiBI,KAjBC,AAiBA,MAAM,AAAC,CACJ,OAAO,CAAE,CAAC,CACV,cAAc,CAAE,GAAG,CACtB",
+    "sources": [
+        "../bestilling-react/src/style/done.scss",
+        "../bestilling-react/src/style/variables.scss"
+    ],
+    "names": [],
+    "file": "done.min.css"
+}

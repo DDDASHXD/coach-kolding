@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,0MAAI,CDEZ,AAAA,aAAa,AAAC,CACV,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,IAAI,CACT,IAAI,CAAE,GAAG,CACT,SAAS,CAAE,gBAAgB,CAC3B,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CACnB,OAAO,CAAE,SAAS,CAClB,UAAU,CAAE,cAAc,CAC1B,MAAM,CAAE,OAAO,CAgBlB,AAzBD,AAWI,aAXS,AAWR,QAAQ,AAAC,CACN,UAAU,CCXX,OAAO,CDYN,KAAK,CAAE,KAAK,CACf,AAdL,AAgBI,aAhBS,AAgBR,OAAO,AAAC,CACL,UAAU,CCVV,OAAO,CDWP,KAAK,CAAE,KAAK,CACf,AAnBL,AAqBI,aArBS,AAqBR,OAAO,AAAC,CACL,OAAO,CAAE,CAAC,CACV,GAAG,CAAE,CAAC,CACT",
+    "sources": [
+        "../bestilling-react/src/style/notification.scss",
+        "../bestilling-react/src/style/variables.scss"
+    ],
+    "names": [],
+    "file": "notification.min.css"
+}
