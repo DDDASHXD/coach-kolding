@@ -1,227 +1,123 @@
-<!--
-Website created by
-______  ___   _____ _   _ __   _____________ _____ _   _ 
-|  _  \/ _ \ /  ___| | | |\ \ / /  _  \  _  \  ___| | | |
-| | | / /_\ \\ `--.| |_| | \ V /| | | | | | | |__ | | | |
-| | | |  _  | `--. \  _  | /   \| | | | | | |  __|| | | |
-| |/ /| | | |/\__/ / | | |/ /^\ \ |/ /| |/ /| |___\ \_/ /
-|___/ \_| |_/\____/\_| |_/\/   \/___/_)___/ \____/ \___/ 
-
-© 2021-2022 DASH SOLUTIONS
-noooo just div. dash xd er kun dig
-og den siger fejl. du kan ikke sætte det her først i documentet
--->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coach Kolding</title>
-    <link rel="stylesheet" href="css/colors.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-    />
-    <!-- <link rel="stylesheet" href="sass/style.css"> -->
-  </head>
 
-  <body>
-    <div class="container-fluid p-0 overflow-hidden">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
-        <div class="container">
-          <a class="navbar-brand col-4" href="#">
-            <img src="" alt=" Coach Kolding - logo" class="img-fluid" />
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coach Kolding</title>
+  <link rel="stylesheet" href="css/colors.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+</head>
 
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+<body>
+  <div class="container-fluid p-0 overflow-hidden">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand col-4" href="#">
+          <img src="" alt=" Coach Kolding - logo" class="img-fluid" />
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="bg-md-light p-3 p-lg-0 collapse navbar-collapse col-8 justify-content-between px-5"
+          id="navbarNavAltMarkup">
+          <ul class="p-3 p-lg-0 navbar-nav d-flex align-self-bottom">
+            <li class="navlink hero current">
+              <a class="nav-link fw-bold p-0" href="#hero">Hjem</a>
+            </li>
+            <li class="navlink omkring">
+              <a class="nav-link fw-bold p-0" href="#omkring">Omkring</a>
+            </li>
+            <li class="navlink behandlinger">
+              <a class="nav-link fw-bold p-0" href="#behandlinger">Behandlinger</a>
+            </li>
+            <li class="navlink kontakt">
+              <a class="nav-link fw-bold p-0" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary shadow py-2 px-4 text-light" onclick="href('./tidsbestilling')">
+            Bestil Tid
           </button>
-
-          <div
-            class="bg-md-light p-3 p-lg-0 collapse navbar-collapse col-8 justify-content-between px-5"
-            id="navbarNavAltMarkup"
-          >
-            <ul class="p-3 p-lg-0 navbar-nav d-flex align-self-bottom">
-              <li class="navlink hero current">
-                <a class="nav-link fw-bold p-0" href="#hero">Hjem</a>
-              </li>
-              <li class="navlink omkring">
-                <a class="nav-link fw-bold p-0" href="#omkring">Omkring</a>
-              </li>
-              <li class="navlink behandlinger">
-                <a class="nav-link fw-bold p-0" href="#behandlinger"
-                  >Behandlinger</a
-                >
-              </li>
-              <li class="navlink kontakt">
-                <a class="nav-link fw-bold p-0" href="#kontakt">Kontakt</a>
-              </li>
-            </ul>
-            <button
-              class="btn btn-primary shadow py-2 px-4 text-light"
-              onclick="href('./tidsbestilling')"
-            >
-              Bestil Tid
-            </button>
-          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <main id="main">
-        <section id="hero">
-          <div class="conatiner-xxl text-center p-5">
-            <div class="row position-relative m-3">
-              <div
-                class="col-7 my-5 position-absolute top-0 start-50 translate-middle-x"
-              >
-                <h1 class="lh-sm fw-bold">
-                  Liv <span class="fw-normal">og</span> Karriere <br />
-                  <span class="text-primary">Coaching</span>
-                </h1>
-                <p class="text-muted fs-5 fw-light">
-                  Personlig udvikling. Find dit personlige udviklingspotentiale.
-                  Nå målene i dit liv. Genfind livsgnisten. Få din retning i
-                  livet. Opnå et liv i balance. Jeg kan være din guide . . .
-                </p>
-                <!-- læs mere på lille skærm -->
-                <!-- <a href="" class="text-decoration-none text-muted"></a> -->
+    <main id="main">
+      <section id="hero">
+        <div class="conatiner-xxl text-center p-5">
+          <div class="row position-relative m-3">
+            <div class="col-7 my-5 position-absolute top-0 start-50 translate-middle-x">
+              <h1 class="lh-sm fw-bold">
+                Liv <span class="fw-normal">og</span> Karriere <br />
+                <span class="text-primary">Coaching</span>
+              </h1>
+              <p class="text-muted fs-5 fw-light">
+                Personlig udvikling. Find dit personlige udviklingspotentiale.
+                Nå målene i dit liv. Genfind livsgnisten. Få din retning i
+                livet. Opnå et liv i balance. Jeg kan være din guide . . .
+              </p>
+              <!-- læs mere på lille skærm -->
+              <!-- <a href="" class="text-decoration-none text-muted"></a> -->
 
-                <!--<p class="">rul ned -></p>-->
-                <a href="#omkring" class="cta text-muted"
-                  >Læs mere<img src="./img/arrow-right.svg"
-                /></a>
-              </div>
+              <!--<p class="">rul ned -></p>-->
+              <a href="#omkring" class="cta text-muted">Læs mere<img src="./img/arrow-right.svg" /></a>
             </div>
           </div>
+        </div>
 
-          <!-- der er fejl -->
-          <div class="scroll" id="scrollIcon" onClick="href('#omkring')">
-            <svg
-              clas="scrollDown"
-              width="40px"
-              height="100%"
-              viewBox="0 0 247 390"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              style="
+        <!-- der er fejl -->
+        <div class="scroll" id="scrollIcon" onClick="href('#omkring')">
+          <svg clas="scrollDown" width="40px" height="100%" viewBox="0 0 247 390" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="
                 fill-rule: evenodd;
                 clip-rule: evenodd;
                 stroke-linecap: round;
                 stroke-linejoin: round;
                 stroke-miterlimit: 1.5;
-              "
-            >
-              <path
-                id="wheel"
-                d="M123.359,79.775l0,72.843"
-                style="fill: none; stroke: #000; stroke-width: 20px"
-              />
-              <path
-                id="mouse"
-                d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
-                style="fill: none; stroke: #000; stroke-width: 20px"
-              />
-            </svg>
-          </div>
-        </section>
+              ">
+            <path id="wheel" d="M123.359,79.775l0,72.843" style="fill: none; stroke: #000; stroke-width: 20px" />
+            <path id="mouse"
+              d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+              style="fill: none; stroke: #000; stroke-width: 20px" />
+          </svg>
+        </div>
+      </section>
 
-        <!-- OMKRING  -->
-        <section id="omkring" class="bg-secondary py-5">
-          <div class="container-xxl">
-            <div class="row">
-              <div class="col-12 col-md-6 mx-auto mb-5">
-                <p class="fs-4 m-0 fw-light text-center subheading">Omkring</p>
-                <h1 class="mx-0 text-center heading display-5">
-                  Coach Kolding
-                </h1>
-                <hr class="opacity-100 w-25 mx-auto my-2 my-lg-3" />
-                <p class="text-muted text-center fs-6">
-                  Personlig udvikling. I rolige omgivelser vil jeg guide dig på
-                  vej i den retning du ønsker. Find dit personlige
-                  udviklingspotentiale. Nå målene i dit liv. Genfind
-                  livsgnisten. Få din retning i livet. Opnå et liv i balance.
-                  Jeg kan være din guide på rejsen til dit… Skal jeg være din
-                  guide på rejsen til dine livsmål? Ønsker du personlig
-                  udvikling? Vil du finde balancen i livet? Vil du nå dine mål.
-                </p>
+      <!-- OMKRING  -->
+      <section id="omkring" class="bg-secondary py-5">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-12 col-md-6 mx-auto mb-5">
+              <p class="fs-4 m-0 fw-light text-center subheading">Omkring</p>
+              <h1 class="mx-0 text-center heading display-5">
+                Coach Kolding
+              </h1>
+              <hr class="opacity-100 w-25 mx-auto my-2 my-lg-3" />
+              <p class="text-muted text-center fs-6">
+                Personlig udvikling. I rolige omgivelser vil jeg guide dig på
+                vej i den retning du ønsker. Find dit personlige
+                udviklingspotentiale. Nå målene i dit liv. Genfind
+                livsgnisten. Få din retning i livet. Opnå et liv i balance.
+                Jeg kan være din guide på rejsen til dit… Skal jeg være din
+                guide på rejsen til dine livsmål? Ønsker du personlig
+                udvikling? Vil du finde balancen i livet? Vil du nå dine mål.
+              </p>
 
-                <div class="col-12 mx-auto p-4 rounded bg-success d-none">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <img
-                        class="img-fluid w-100 rounded-circle"
-                        src="img/IMG_4529[20] kopi.jpeg"
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                      <h5 class="fs-5 text-primary">Min faglige baggrund:</h5>
-                      <div class="row text-dark" style="font-size: 12px">
-                        <ul class="">
-                          <li>Socialrådgiver</li>
-                          <li>NLP Coach Practitioner</li>
-                          <li>NLP Master Coach Practitioner</li>
-                          <li>Mediation</li>
-                          <li>NADA-akupunktør</li>
-                          <li>Gestaltterapiweew</li>
-                          <li>Metakognitiv terapi</li>
-                          <li>Åben dialog</li>
-                          <li>Feedback Informed Treatment (FIT)</li>
-                          <li>Certified TRU Practitioner</li>
-                          <li>Empowement</li>
-                          <li>Værdiskabelse</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 mb-5">
-                <div class="row justify-content-center">
-                  <div class="col-10">
-                    <img
-                      src="img/1684367 2.jpg"
-                      alt=""
-                      class="img-fluid rounded-top w-100"
-                    />
-                  </div>
-                  <div class="col-10">
-                    <img
-                      src="img/271706013_598309321267277_3749669015426699254_n.jpg"
-                      alt=""
-                      class="img-fluid rounded-bottom w-100"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-8 mx-auto p-4 rounded bg-success">
+              <div class="col-12 mx-auto p-4 rounded bg-success d-none">
                 <div class="row">
                   <div class="col-12 col-md-6">
-                    <img
-                      class="img-fluid w-100 rounded-circle"
-                      src="img/IMG_4529[20] kopi.jpeg"
-                      alt=""
-                    />
+                    <img class="img-fluid w-100 rounded-circle" src="img/IMG_4529[20] kopi.jpeg" alt="" />
                   </div>
 
                   <div class="col-12 col-md-6">
-                    <h5 class="fs-4 p-2 text-primary">Min faglige baggrund:</h5>
-                    <div class="ps-4 row text-dark">
+                    <h5 class="fs-5 text-primary">Min faglige baggrund:</h5>
+                    <div class="row text-dark" style="font-size: 12px">
                       <ul class="">
                         <li>Socialrådgiver</li>
                         <li>NLP Coach Practitioner</li>
@@ -241,398 +137,331 @@ og den siger fejl. du kan ikke sætte det her først i documentet
                 </div>
               </div>
             </div>
-          </div>
-        </section>
 
-        <!-- BEHANDLINGER  -->
-        <section class="container px-lg-5 py-3 py-md-0" id="behandlinger">
-          <div
-            class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start"
-          >
-            <figcaption class="col-md-7">
-              <p class="ps-1 text-primary opacity-75 m-0">60 min</p>
-              <h2 class="fs-1">Coachende samtaler</h2>
-              <p class="text-muted fs-6">
-                Jeg vil guide og støtte dig på rejsen mod dine mål. <br />
-                Til samtalerne har du fuld mulighed for at åbne op om alle dine
-                bekymringer og udfordringer og få mere ro på tankerne.
-              </p>
-              <br />
-              <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
-            </figcaption>
+            <div class="col-12 col-md-6 mb-5">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <img src="img/1684367 2.jpg" alt="" class="img-fluid rounded-top w-100" />
+                </div>
+                <div class="col-10">
+                  <img src="img/271706013_598309321267277_3749669015426699254_n.jpg" alt=""
+                    class="img-fluid rounded-bottom w-100" />
+                </div>
+              </div>
+            </div>
 
-            <figure class="col-md-5 d-none d-md-block">
-              <img
-                src="img/pexels-cottonbro-4098162.jpg"
-                alt=""
-                class="img-fluid rounded-1"
-              />
-            </figure>
-            <!-- 500,00 kr. -->
-          </div>
+            <div class="col-8 mx-auto p-4 rounded bg-success">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <img class="img-fluid w-100 rounded-circle" src="img/IMG_4529[20] kopi.jpeg" alt="" />
+                </div>
 
-          <div
-            class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start"
-          >
-            <figure class="col-md-5 d-none d-md-block">
-              <img
-                src="img/pexels-cottonbro-4098162.jpg"
-                alt=""
-                class="img-fluid rounded-1"
-              />
-            </figure>
-            <!-- 550,00 kr. -->
-
-            <figcaption class="col-md-7">
-              <p class="ps-1 text-primary opacity-75 m-0">60 min</p>
-              <h2 class="fs-1">Coachende samtaler + NADA</h2>
-              <p class="text-muted fs-6">
-                Samtidig med den coachende samtale tilbydes du NADA behandling.
-                Nada behandlinger en behandling, som kan under støtte udbyttet
-                af samtalen.
-              </p>
-              <br />
-              <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
-            </figcaption>
-          </div>
-
-          <div
-            class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start"
-          >
-            <figcaption class="col-md-7">
-              <p class="ps-1 text-primary opacity-75 m-0">45 min</p>
-              <h2 class="fs-1">NADA i gruppe</h2>
-              <p class="fs-5">(ved min 4 personer)</p>
-              <p class="text-muted fs-6">
-                NADA behandling kan blandt meget andet øge dit fokus, virke
-                afslappende, afstressende, modvirke angst.
-              </p>
-              <br />
-              <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
-            </figcaption>
-
-            <figure class="col-md-5 d-none d-md-block">
-              <img
-                src="img/pexels-cottonbro-4098162.jpg"
-                alt=""
-                class="img-fluid rounded-1"
-              />
-            </figure>
-            <!-- 50,00 kr. -->
-          </div>
-
-          <div
-            class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start"
-          >
-            <figure class="col-md-5 d-none d-md-block">
-              <img
-                src="img/pexels-cottonbro-4098162.jpg"
-                alt=""
-                class="img-fluid rounded-1"
-              />
-            </figure>
-            <!-- 850,00 kr. -->
-
-            <figcaption class="col-md-7">
-              <p class="ps-1 text-primary opacity-75 m-0">120 min</p>
-              <h2 class="fs-1">Parsamtaler</h2>
-              <p class="text-muted">
-                Ved parsamtaler kan I, som par få støtte til at arbejde med
-                parforholdet, så i opnår en større indsigt i parforholdet og
-                hinanden. Parsamtaler kan både være forebyggende og når der er
-                opstået udfordringer i parforholdet.
-              </p>
-              <br />
-              <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
-            </figcaption>
-          </div>
-
-          <div
-            class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start"
-          >
-            <figcaption class="col-md-7">
-              <p class="ps-1 text-primary opacity-75 m-0">120 min</p>
-              <h2 class="fs-1">Netværkssamtaler</h2>
-              <p class="text-muted">
-                Kan du får støtte til at føre samtaler med andre i dit nærtværk,
-                det kan være både det private netværk og øvrige netværk.
-              </p>
-              <br />
-              <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
-            </figcaption>
-
-            <figure class="col-md-5 d-none d-md-block">
-              <img
-                src="img/pexels-cottonbro-4098162.jpg"
-                alt=""
-                class="img-fluid rounded-1"
-              />
-            </figure>
-            <!-- 850,00 kr. -->
-          </div>
-        </section>
-        <!-- ...  -->
-
-        <!-- KONTAKT  -->
-        <section
-          class="container-fluid bg-secondary px-lg-5 py-1 py-md-3"
-          id="kontakt"
-        >
-          <div class="row px-sm-5 px-md-1 px-lg-1 py-5">
-            <div class="mx-auto col-md-6 pe-xl-5 px-3 px-md-0">
-              <!-- KONTAKT OPLYSNINGER  -->
-              <div class="container">
-                <div
-                  class="d-flex justify-content-center justify-content-md-start"
-                >
-                  <div class="">
-                    <h3 class="fs-2 text-center text-md-start">Kontakt</h3>
-                    <br />
-                    <div class="contactrow">
-                      <img class="contacticon" src="./img/pin.svg" alt="" />
-                      <a
-                        href="https://www.google.com/maps/place/Grydh%C3%B8j+16,+6000+Kolding/@55.5261584,9.4670724,17z/data=!3m1!4b1!4m5!3m4!1s0x464c9e5359e6d273:0xc5f8b0a835dc6087!8m2!3d55.5261584!4d9.4692611"
-                        >Grydhøj 16, 6000 Kolding</a
-                      >
-                    </div>
-                    <div class="contactrow">
-                      <img class="contacticon" src="./img/phone.svg" alt="" />
-                      <a href="tel:+4531701494">(+45) 31 70 14 94 </a>
-                    </div>
-                    <div class="contactrow">
-                      <img
-                        class="contacticon mail"
-                        src="./img/mail.svg"
-                        alt=""
-                      />
-                      <a href="mailto:info@coachkolding.dk"
-                        >info@coachkolding.dk</a
-                      >
-                    </div>
+                <div class="col-12 col-md-6">
+                  <h5 class="fs-4 p-2 text-primary">Min faglige baggrund:</h5>
+                  <div class="ps-4 row text-dark">
+                    <ul class="">
+                      <li>Socialrådgiver</li>
+                      <li>NLP Coach Practitioner</li>
+                      <li>NLP Master Coach Practitioner</li>
+                      <li>Mediation</li>
+                      <li>NADA-akupunktør</li>
+                      <li>Gestaltterapiweew</li>
+                      <li>Metakognitiv terapi</li>
+                      <li>Åben dialog</li>
+                      <li>Feedback Informed Treatment (FIT)</li>
+                      <li>Certified TRU Practitioner</li>
+                      <li>Empowement</li>
+                      <li>Værdiskabelse</li>
+                    </ul>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <!-- KONTAKT FORM  -->
-                <div class="pe-lg-5">
-                  <form action="#" class="contactForm">
+      <!-- BEHANDLINGER  -->
+      <section class="container px-lg-5 py-3 py-md-0" id="behandlinger">
+        <div class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start">
+          <figcaption class="col-md-7">
+            <p class="ps-1 text-primary opacity-75 m-0">60 min</p>
+            <h2 class="fs-1">Coachende samtaler</h2>
+            <p class="text-muted fs-6">
+              Jeg vil guide og støtte dig på rejsen mod dine mål. <br />
+              Til samtalerne har du fuld mulighed for at åbne op om alle dine
+              bekymringer og udfordringer og få mere ro på tankerne.
+            </p>
+            <br />
+            <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
+          </figcaption>
+
+          <figure class="col-md-5 d-none d-md-block">
+            <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded-1" />
+          </figure>
+          <!-- 500,00 kr. -->
+        </div>
+
+        <div class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start">
+          <figure class="col-md-5 d-none d-md-block">
+            <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded-1" />
+          </figure>
+          <!-- 550,00 kr. -->
+
+          <figcaption class="col-md-7">
+            <p class="ps-1 text-primary opacity-75 m-0">60 min</p>
+            <h2 class="fs-1">Coachende samtaler + NADA</h2>
+            <p class="text-muted fs-6">
+              Samtidig med den coachende samtale tilbydes du NADA behandling.
+              Nada behandlinger en behandling, som kan under støtte udbyttet
+              af samtalen.
+            </p>
+            <br />
+            <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
+          </figcaption>
+        </div>
+
+        <div class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start">
+          <figcaption class="col-md-7">
+            <p class="ps-1 text-primary opacity-75 m-0">45 min</p>
+            <h2 class="fs-1">NADA i gruppe</h2>
+            <p class="fs-5">(ved min 4 personer)</p>
+            <p class="text-muted fs-6">
+              NADA behandling kan blandt meget andet øge dit fokus, virke
+              afslappende, afstressende, modvirke angst.
+            </p>
+            <br />
+            <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
+          </figcaption>
+
+          <figure class="col-md-5 d-none d-md-block">
+            <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded-1" />
+          </figure>
+          <!-- 50,00 kr. -->
+        </div>
+
+        <div class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start">
+          <figure class="col-md-5 d-none d-md-block">
+            <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded-1" />
+          </figure>
+          <!-- 850,00 kr. -->
+
+          <figcaption class="col-md-7">
+            <p class="ps-1 text-primary opacity-75 m-0">120 min</p>
+            <h2 class="fs-1">Parsamtaler</h2>
+            <p class="text-muted">
+              Ved parsamtaler kan I, som par få støtte til at arbejde med
+              parforholdet, så i opnår en større indsigt i parforholdet og
+              hinanden. Parsamtaler kan både være forebyggende og når der er
+              opstået udfordringer i parforholdet.
+            </p>
+            <br />
+            <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
+          </figcaption>
+        </div>
+
+        <div class="row py-3 py-md-4 p-lg-5 my-5 my-md-0 text-center text-md-start">
+          <figcaption class="col-md-7">
+            <p class="ps-1 text-primary opacity-75 m-0">120 min</p>
+            <h2 class="fs-1">Netværkssamtaler</h2>
+            <p class="text-muted">
+              Kan du får støtte til at føre samtaler med andre i dit nærtværk,
+              det kan være både det private netværk og øvrige netværk.
+            </p>
+            <br />
+            <a class="cta">Læs mere<img src="./img/arrow-right.svg" /></a>
+          </figcaption>
+
+          <figure class="col-md-5 d-none d-md-block">
+            <img src="img/pexels-cottonbro-4098162.jpg" alt="" class="img-fluid rounded-1" />
+          </figure>
+          <!-- 850,00 kr. -->
+        </div>
+      </section>
+      <!-- ...  -->
+
+      <!-- KONTAKT  -->
+      <section class="container-fluid bg-secondary px-lg-5 py-1 py-md-3" id="kontakt">
+        <div class="row px-sm-5 px-md-1 px-lg-1 py-5">
+          <div class="mx-auto col-md-6 pe-xl-5 px-3 px-md-0">
+            <!-- KONTAKT OPLYSNINGER  -->
+            <div class="container">
+              <div class="d-flex justify-content-center justify-content-md-start">
+                <div class="">
+                  <h3 class="fs-2 text-center text-md-start">Kontakt</h3>
+                  <br />
+                  <div class="contactrow">
+                    <img class="contacticon" src="./img/pin.svg" alt="" />
+                    <a
+                      href="https://www.google.com/maps/place/Grydh%C3%B8j+16,+6000+Kolding/@55.5261584,9.4670724,17z/data=!3m1!4b1!4m5!3m4!1s0x464c9e5359e6d273:0xc5f8b0a835dc6087!8m2!3d55.5261584!4d9.4692611">Grydhøj
+                      16, 6000 Kolding</a>
+                  </div>
+                  <div class="contactrow">
+                    <img class="contacticon" src="./img/phone.svg" alt="" />
+                    <a href="tel:+4531701494">(+45) 31 70 14 94 </a>
+                  </div>
+                  <div class="contactrow">
+                    <img class="contacticon mail" src="./img/mail.svg" alt="" />
+                    <a href="mailto:info@coachkolding.dk">info@coachkolding.dk</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- KONTAKT FORM  -->
+              <div class="pe-lg-5">
+                <form action="#" class="contactForm">
+                  <div class="name coll">
+                    <div class="input">
+                      <input type="text" id="firstname" name="firstname" placeholder=" " />
+                      <p class="label">Fornavn</p>
+                    </div>
+                    <div class="input">
+                      <input type="text" id="lastname" name="lastname" placeholder=" " />
+                      <p class="label">Efternavn</p>
+                    </div>
+                  </div>
+                  <div class="contact coll">
                     <div class="name coll">
                       <div class="input">
-                        <input
-                          type="text"
-                          id="firstname"
-                          name="firstname"
-                          placeholder=" "
-                        />
-                        <p class="label">Fornavn</p>
+                        <input type="text" id="email" name="email" placeholder=" " />
+                        <p class="label">Email</p>
                       </div>
                       <div class="input">
-                        <input
-                          type="text"
-                          id="lastname"
-                          name="lastname"
-                          placeholder=" "
-                        />
-                        <p class="label">Efternavn</p>
+                        <input type="text" id="phone" name="phone" placeholder=" " />
+                        <p class="label">Telefon</p>
                       </div>
                     </div>
-                    <div class="contact coll">
-                      <div class="name coll">
-                        <div class="input">
-                          <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            placeholder=" "
-                          />
-                          <p class="label">Email</p>
-                        </div>
-                        <div class="input">
-                          <input
-                            type="text"
-                            id="phone"
-                            name="phone"
-                            placeholder=" "
-                          />
-                          <p class="label">Telefon</p>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="coll">
+                    <div class="input area">
+                      <textarea name="message" id="message" placeholder=" "></textarea>
+                      <p class="label">Besked</p>
                     </div>
-                    <div class="coll">
-                      <div class="input area">
-                        <textarea
-                          name="message"
-                          id="message"
-                          placeholder=" "
-                        ></textarea>
-                        <p class="label">Besked</p>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <!-- GOOGLE MAPS  -->
-            <figure class="col-md-6 ps-lg-5 mt-4 mt-md-0">
-              <iframe
-                class="rounded shadow"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2258.356557470518!2d9.467072416034146!3d55.526158380493406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c9e5359e6d273%3A0xc5f8b0a835dc6087!2sGrydh%C3%B8j%2016%2C%206000%20Kolding!5e0!3m2!1sda!2sdk!4v1642585721904!5m2!1sda!2sdk"
-                width="100%"
-                height="100%"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </div>
-        </section>
-        <!-- . . .  -->
-
-        <section id="slider">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-caption d-none d-md-block text-dark p-5">
-                  <p class="fs-3">
-                    "Det har jeg ikke prøvet før. Så det kan jeg sikker godt."
-                  </p>
-                  <p class="fst-italic">-Pippi</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide" />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only"></span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only"></span>
-            </a>
-          </div>
-        </section>
-      </main>
-
-      <footer class="container-fluid">
-        <div class="row bg-secondary p-5">
-          <div class="col-7">
-            <div class="row">
-              <div class="col-md-4">
-                <h5>JustDiv kontakt informationer</h5>
-                <ul>
-                  <li>website: justdiv.dev</li>
-                  <li>mail</li>
-                  <li>tlf</li>
-                </ul>
-              </div>
-
-              <div class="col-md-4">
-                <h5>Andre mulighedder</h5>
-                <ul>
-                  <li>
-                    <a
-                      class="text-decoration-none"
-                      href="https://nada-danmark.dk/netvaerk-og-behandling/behandlernetvaerk/"
-                      >Nada Danmark</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-decoration-none"
-                      href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB"
-                      >NLP Huset</a
-                    >
-                  </li>
-                </ul>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
 
-          <div class="col-5 text-end text-md-center">
-            <p class="lead m-0">JustDiv</p>
-            <h3>Website Creators</h3>
-            <hr class="w-50 mx-auto opacity-100" />
+          <!-- GOOGLE MAPS  -->
+          <figure class="col-md-6 ps-lg-5 mt-4 mt-md-0">
+            <iframe class="rounded shadow"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2258.356557470518!2d9.467072416034146!3d55.526158380493406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c9e5359e6d273%3A0xc5f8b0a835dc6087!2sGrydh%C3%B8j%2016%2C%206000%20Kolding!5e0!3m2!1sda!2sdk!4v1642585721904!5m2!1sda!2sdk"
+              width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+          </figure>
+        </div>
+      </section>
+      <!-- . . .  -->
 
-            <p class="text-muted">
-              Hjemmesiden er lavet af et lille selvstartet web firma JustDiv
-              betånde af 2 personer.
-              <br class="d-none d-md-block" />
-              JustDiv laver hjemmesider og grafisk design til alle slags
-              virksomheder.
-            </p>
-            <p class="">Julie Thomhav & Sebastion Skov Nielsen</p>
-            <div class="social-icons gap-0 justify-content-center row">
-              <div class="col-1">
-                <a href=""><i class="text-muted bi bi-linkedin"></i></a>
+      <section id="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-none d-md-block text-dark p-5">
+                <p class="fs-3">
+                  "Det har jeg ikke prøvet før. Så det kan jeg sikker godt."
+                </p>
+                <p class="fst-italic">-Pippi</p>
               </div>
-              <div class="col-1">
-                <a href=""><i class="text-muted bi bi-instagram"></i></a>
-              </div>
-              <div class="col-1">
-                <a href=""><i class="text-muted bi bi-facebook"></i></a>
-              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="..." alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="..." alt="Third slide" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+      </section>
+    </main>
 
-              <!-- facebook - reklame
+    <footer class="container-fluid">
+      <div class="row bg-secondary p-5">
+        <div class="col-7">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>JustDiv kontakt informationer</h5>
+              <ul>
+                <li>website: justdiv.dev</li>
+                <li>mail</li>
+                <li>tlf</li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <h5>Andre mulighedder</h5>
+              <ul>
+                <li>
+                  <a class="text-decoration-none"
+                    href="https://nada-danmark.dk/netvaerk-og-behandling/behandlernetvaerk/">Nada Danmark</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none"
+                    href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB">NLP
+                    Huset</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5 text-end text-md-center">
+          <p class="lead m-0">JustDiv</p>
+          <h3>Website Creators</h3>
+          <hr class="w-50 mx-auto opacity-100" />
+
+          <p class="text-muted">
+            Hjemmesiden er lavet af et lille selvstartet web firma JustDiv
+            betånde af 2 personer.
+            <br class="d-none d-md-block" />
+            JustDiv laver hjemmesider og grafisk design til alle slags
+            virksomheder.
+          </p>
+          <p class="">Julie Thomhav & Sebastion Skov Nielsen</p>
+          <div class="social-icons gap-0 justify-content-center row">
+            <div class="col-1">
+              <a href=""><i class="text-muted bi bi-linkedin"></i></a>
+            </div>
+            <div class="col-1">
+              <a href=""><i class="text-muted bi bi-instagram"></i></a>
+            </div>
+            <div class="col-1">
+              <a href=""><i class="text-muted bi bi-facebook"></i></a>
+            </div>
+
+            <!-- facebook - reklame
                       instagram - photograf billeder, grafisk design
                       youtube - tutorials
                       linkin - profecionel portfolio
                       website link -->
-            </div>
           </div>
         </div>
+      </div>
 
-        <div class="row px-md-5 py-3 bg-dark text-light">
-          <div class="col-auto me-auto">@coach kolding</div>
-          <div class="col-auto ms-auto">@JustDiv</div>
-        </div>
-      </footer>
-    </div>
+      <div class="row px-md-5 py-3 bg-dark text-light">
+        <div class="col-auto me-auto">@coach kolding</div>
+        <div class="col-auto ms-auto">@JustDiv</div>
+      </div>
+    </footer>
+  </div>
 
-    <script src="index.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
