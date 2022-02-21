@@ -1,6 +1,28 @@
 
+@media screen and (max-width: 768px){
+ 
+
+  #hero{
+    height: 70vh;
+    padding: 10px;
+
+    .scroll{
+      display: none;
+    }
+  }
+  
+}
+
+
+
 // MOBILE
-@media  screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
+
+  nav{
+    background: white;
+    margin-bottom: 50px;
+  }
+    
 
     #hero{
       height: 50vh;
@@ -14,16 +36,5 @@
   }
 
 // TABLET
-@media screen  and (max-width: 992px){
 
-  #hero{
-    height: 70vh;
-    padding: 10px;
-
-    .scroll{
-      display: none;
-    }
-  }
-  
-}
 
