@@ -1,0 +1,29 @@
+
+// MOBILE
+@media  screen and (max-width: 600px) {
+
+    #hero{
+      height: 50vh;
+      padding: 10px;
+  
+      .scroll{
+        display: none;
+      }
+    }
+    
+  }
+
+// TABLET
+@media screen  and (max-width: 992px){
+
+  #hero{
+    height: 70vh;
+    padding: 10px;
+
+    .scroll{
+      display: none;
+    }
+  }
+  
+}
+

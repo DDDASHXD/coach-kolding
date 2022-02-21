@@ -1,5 +1,6 @@
 @import "./variables.scss";
 
+
 * {
   font-family: $openSans;
 
@@ -166,6 +167,7 @@ nav {
  
 
   height: 100vh;
+  
   z-index: 1;
 
   &::after {
@@ -220,6 +222,8 @@ nav {
     }
   }
 }
+
+
 
 //  media
 
@@ -350,3 +354,5 @@ nav {
     }
   }
 }
+
+@import "./media.scss";
